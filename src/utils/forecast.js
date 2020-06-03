@@ -13,7 +13,8 @@ const foreCast = (lat, long, callback) => {
             }
             else {
                 callback(undefined, body.current.weather_descriptions[0] + ". Current temperature is " +
-                body.current.temperature + " but it feels like " + body.current.feelslike);
+                body.current.temperature + " but it feels like " + body.current.feelslike + ". And the humidity is " + 
+                body.current.humidity + "%");
             }
     });
 }
